@@ -65,25 +65,27 @@
         // No need to change anything ABOVE this line ^
 
         return (
-          <h1>Draw a Card</h1>
-          <button onClick={}>
-            Click to Draw a Card
-          </button>
-          <button onclick={shuffle}>
-            Return Cards and Shuffle Deck
-          </button>
-          <div style={handStyles}>
-            {hand.map((card, index) => {
-              return (
-                <div style={cardStyles} key={index}>
-                  {card}
-                </div>
-              )
-            })}
-          </div>
+          <>
+            <h1>Draw a Card</h1>
+            <button onClick={drawCard}>
+              Click to Draw a Card
+            </button>
+            <button onClick={shuffle}>
+              Return Cards and Shuffle Deck
+            </button>
+            <div style={handStyles}>
+              {hand.map((card, index) => {
+                return (
+                  <div style={cardStyles} key={index}>
+                    {card}
+                  </div>
+                )
+              })}
+            </div>
+          </>
         )
       }
-
+      // If it was not mentioned in the instructions to look at console, I would have never figured out onClick was improperly written. Needing to be wrapped in reaction fragments was kind of obvious along with needing to fill something inside the onclick, and in this case drawCard, I believe. I just had to trace it back to what needed to be filled.
       // No need to change anything below this line
 
       const domContainer = document.querySelector('#react-container')

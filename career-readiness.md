@@ -10,10 +10,12 @@ Wire frames are used to outline the basic structure of your site. Wire frames sh
 
 Submit the link to your wire frames:
 
+https://jdpinkard.carrd.co
+
 
 ### LinkedIn
 
-Your LinkedIn url:
+Your LinkedIn url: www.linkedin.com/in/jdpinkard/
 
 Check the boxes below to certify that you have completed the following items on LinkedIn:
 
